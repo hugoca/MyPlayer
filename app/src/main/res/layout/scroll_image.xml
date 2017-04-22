@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+
+	<com.huanghj.mp3.scollview.ImageScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="160dip"
+		android:id="@+id/myImageScrollView" />
+
+	<com.huanghj.mp3.scollview.PageControlView
+		android:layout_width="fill_parent"
+		android:layout_height="26dip"
+		android:background="#8f00000f"
+		android:gravity="center"
+		android:id="@+id/myPageControlView"
+		android:layout_alignBottom="@id/myImageScrollView"
+		android:layout_alignLeft="@id/myImageScrollView" />
+
+</RelativeLayout>

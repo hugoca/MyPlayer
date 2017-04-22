@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:alpha="60" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="sdfasdf\nyutuiyui\nrtytyty\nrttydsjkfrjes\nsdfasdf\nyutuiyui\nrtytyty\nrttydsjkfrjes\nsdfasdf\nyutuiyui\nrtytyty\nrttydsjkfrjes\n" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/background"
+        android:alpha="0.8" />
+
+
+</RelativeLayout>

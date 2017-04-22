@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relayout_main"
+    tools:context="com.huanghj.mp3.MainActivity">
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/linearLayout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="推荐"
+            android:gravity="center"
+            android:id="@+id/refer_title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="分类"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/classify_title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="搜索"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/search_title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="我的"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/mymenu_title"/>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPage_View"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/linearLayout3"
+        >
+    </android.support.v4.view.ViewPager>
+
+
+
+    <!--<com.huanghj.mp3.util.PlayBar-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:id="@+id/playbar"-->
+        <!--android:layout_alignParentBottom="true"/>-->
+
+
+
+</RelativeLayout>

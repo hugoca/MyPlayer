@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Mp3</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_play">PlayActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="my_collect">我的收藏</string>
+
+    <string name="login">用户登录</string>
+
+    <string name="register">用户注册</string>
+    <string name="username">用　户　名:</string>
+    <string name="password">密　　　码:</string>
+
+</resources>

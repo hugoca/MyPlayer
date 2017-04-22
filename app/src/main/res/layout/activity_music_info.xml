@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relayout_musicInfo"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="80dp"
+    tools:context="com.huanghj.mp3.MusicInfoActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@mipmap/music_widget_cover"
+        android:layout_above="@+id/tv_songname"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="歌曲名"
+        android:id="@+id/textView2"
+        android:padding="5dp"
+        android:layout_centerVertical="true"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="New Text"
+        android:id="@+id/tv_songname"
+        android:padding="5dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginStart="63dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/line_bg"
+        android:layout_height="1dp"
+        android:id="@+id/view"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="歌手"
+        android:id="@+id/textView3"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_below="@+id/view"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="New Text"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignStart="@+id/tv_songname"
+        android:id="@+id/tv_artist" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/line_bg"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="大小"
+        android:id="@+id/textView4"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_below="@+id/view2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="New Text"
+        android:padding="5dp"
+        android:gravity="center"
+        android:id="@+id/tv_size"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignStart="@+id/tv_artist" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/line_bg"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="专辑"
+        android:id="@+id/textView6"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_below="@+id/view3"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="New Text"
+        android:padding="5dp"
+        android:gravity="center"
+        android:id="@+id/tv_ablum"
+        android:layout_below="@+id/view3"
+        android:layout_alignStart="@+id/tv_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/line_bg"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="时间"
+        android:id="@+id/textView5"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="New Text"
+        android:padding="5dp"
+        android:gravity="center"
+        android:id="@+id/tv_duration"
+        android:layout_below="@+id/tv_ablum"
+        android:layout_alignStart="@+id/tv_ablum" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/line_bg"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="路径"
+        android:id="@+id/textView7"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="New Text"
+        android:padding="5dp"
+        android:gravity="center"
+        android:id="@+id/tv_url"
+        android:layout_alignTop="@+id/view6"
+        android:layout_toEndOf="@+id/textView2" />
+
+
+</RelativeLayout>

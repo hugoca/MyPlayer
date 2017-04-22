@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relayout_play"
+    tools:context="com.huanghj.mp3.PlayActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="130dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/linearLayout"
+        android:paddingBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前时间"
+            android:id="@+id/tv_current"
+            android:textSize="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="歌曲时间"
+            android:id="@+id/tv_sumtime"
+            android:textSize="12dp"
+            android:layout_alignTop="@+id/tv_current"
+            android:layout_alignEnd="@+id/seekbar" />
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:maxHeight="2dp"
+            android:minHeight="1dp"
+            android:progressDrawable="@drawable/po_seekbar"
+            android:thumb="@mipmap/icon_dot_highlight"
+            android:indeterminate="false"
+            android:thumbOffset="2dp"
+            android:layout_below="@+id/tv_current"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_order_normal"
+            android:id="@+id/imgv_model"
+            android:layout_alignBottom="@+id/previous_mg"
+            android:layout_toStartOf="@+id/previous_mg"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="5dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_bottom_play_bar_previous_normal_"
+            android:id="@+id/previous_mg"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/play_img"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/btn_playback_play_normal"
+            android:id="@+id/play_img"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_bottom_play_bar_next_normal"
+            android:id="@+id/next_img"
+            android:layout_alignBottom="@+id/play_img"
+            android:layout_toEndOf="@+id/play_img"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="5dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_love"
+            android:src="@mipmap/icon_collect_normal"
+            android:layout_marginLeft="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/imgv_model"
+            android:layout_alignParentEnd="false"
+            android:layout_toEndOf="@+id/next_img" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="歌曲名"
+        android:id="@+id/tv_songname"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="作家"
+        android:id="@+id/tv_artist"
+        android:layout_below="@+id/tv_songname"
+        android:layout_centerHorizontal="true" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_height="10dp"
+        android:layout_below="@+id/tv_artist"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:id="@+id/linearLayout2">
+
+        <ImageView
+            android:id="@+id/dot_one"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_dot_normal" />
+
+        <ImageView
+            android:id="@+id/dot_two"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_dot_highlight" />
+
+        <ImageView
+            android:id="@+id/dot_three"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_dot_normal" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relayout_update"
+    tools:context="com.huanghj.mp3.activity.CheckUpdateActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="huPlayer"
+        android:textSize="35dp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_state"
+        android:textSize="23dp"
+        android:text="已是最新版本"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView9" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="版本号 1.01"
+        android:textSize="18dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/update_state"
+        android:id="@+id/textView9" />
+
+
+
+</RelativeLayout>

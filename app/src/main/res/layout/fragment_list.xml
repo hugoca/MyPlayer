@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.huanghj.mp3.fragment.ListFragment">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_recycler_frag_View"
+        android:gravity="center"
+        android:dividerHeight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

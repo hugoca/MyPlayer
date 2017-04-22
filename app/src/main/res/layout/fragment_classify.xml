@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.huanghj.mp3.fragment.ClassifyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ScrollView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/lay_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/class_image1"
+                    android:onClick="onImageClick"
+                    android:layout_weight="1"
+                    android:src="@mipmap/c2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:onClick="onImageClick"
+                    android:id="@+id/class_image2"
+                    android:layout_weight="1"
+                    android:src="@mipmap/c8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lay_one"
+                android:layout_marginTop="-20dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/class_image3"
+                    android:onClick="onImageClick"
+                    android:layout_weight="1"
+                    android:src="@mipmap/c11" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/class_image4"
+                    android:layout_marginLeft="3dp"
+                    android:textSize="16dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/c12" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:onClick="onImageClick"
+                android:background="@color/linbg"
+                android:layout_marginTop="5dp"
+                android:text="语种"
+                android:layout_below="@+id/lay_two"
+                />
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                 android:numColumns="4"
+                android:id="@+id/language_grid"
+                android:layout_below="@+id/lay_two"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:textSize="16dp"
+                android:background="@color/linbg"
+                android:layout_marginTop="5dp"
+                android:text="风格"
+                android:layout_below="@+id/language_grid"
+                />
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:stretchMode="columnWidth"
+                android:numColumns="4"
+                android:id="@+id/style_grid"
+                android:layout_below="@+id/language_grid"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:textSize="16dp"
+                android:background="@color/linbg"
+                android:layout_marginTop="5dp"
+                android:text="场景"
+                android:layout_below="@+id/style_grid"
+                />
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:numColumns="4"
+                android:id="@+id/where_grid"
+                android:layout_below="@+id/style_grid"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:textSize="16dp"
+                android:background="@color/linbg"
+                android:layout_marginTop="5dp"
+                android:text="主题"
+                android:layout_below="@+id/where_grid"
+                />
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:numColumns="4"
+                android:id="@+id/theme_grid"
+                android:layout_below="@+id/where_grid"
+                />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

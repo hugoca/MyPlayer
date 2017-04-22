@@ -1,0 +1,50 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/textColor_normal</item>
+
+    </style>
+
+    <!--&lt;!&ndash; 字体颜色和大小 &ndash;&gt;-->
+    <style name="DefaultFontStyle">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#c74646</item>
+    </style>
+
+    <!--&lt;!&ndash; 全局背景色  &ndash;&gt;-->
+    <style name="DefaultBgColor" parent="@style/DefaultFontStyle">
+        <item name="android:background">@drawable/background</item>
+    </style>
+
+    <!-- 全局样式-->
+    <style name="DefaultStyle" parent="@style/DefaultBgColor"></style>
+
+    <style name="CommonListBaseLinearLayout1">
+        <item name="android:layout_height">49dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/common_list_item_bg</item>
+    </style>
+
+    <!-- 横线 -->
+    <style name="BaseHorizontalLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+
+    </style>
+
+    <!--  公共开关按钮-->
+    <style name="SwitchButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@drawable/common_switch_btn_selector</item>
+    </style>
+
+
+</resources>

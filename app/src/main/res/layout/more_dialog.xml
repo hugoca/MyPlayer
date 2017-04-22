@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:orientation="vertical"
+    android:layout_height="400dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/textview_press"
+        android:text="歌曲信息"
+        android:id="@+id/musicinfo" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/line_bg"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/textview_press"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="添加到"
+        android:id="@+id/add" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/line_bg"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/textview_press"
+        android:text="收藏"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:id="@+id/restore" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/line_bg"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/textview_press"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="分享"
+        android:id="@+id/share" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/line_bg"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/textview_press"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="删除"
+        android:id="@+id/delete" />
+
+</LinearLayout>

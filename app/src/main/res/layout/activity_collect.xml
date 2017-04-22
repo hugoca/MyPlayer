@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relayout_collect"
+    tools:context="com.huanghj.mp3.activity.CollectActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/my_collect"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_recycler_collect"
+        android:layout_marginTop="75dp"
+        android:gravity="center"
+        android:dividerHeight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="没有收藏音乐"
+        android:textSize="25dp"
+        android:visibility="gone"
+        android:id="@+id/no_collect_show"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="230dp" />
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Primary">#3F51B5</color>
+    <color name="PrimaryDark">#303F9F</color>
+    <color name="Accent">#FF4081</color>
+    <color name="line_bg">#6e6c6c</color>
+    <color name="playbar_bg">#55c4a6</color>
+    <color name="black">#0e0e0e</color>
+    <color name="dialog_view_normal">#afaeae</color>
+    <color name="dialog_view_press">#8e8d8d</color>
+    <color name="dividerColor">#40ffffff</color>
+
+
+    <color name="textColor_normal">#d9d3d3</color>
+    <color name="textColor_focus">#d76a03</color>
+    <color name="textColor">#949393</color>
+
+    <color name="bg1_s">#a73723</color>
+    <color name="bg1_e">#120306</color>
+
+    <color name="bg2_s">#4f9c72</color>
+    <color name="bg2_e">#0f1e19</color>
+
+    <color name="bg3_s">#fc246c71</color>
+    <color name="bg3_e">#060f13</color>
+
+    <color name="bg4_s">#fc78af25</color>
+    <color name="bg4_s1">#fc567e19</color>
+
+    <color name="bg4_e">#fd060606</color>
+    <color name="linbg">#ca433836</color>
+    <color name="playbar_bg1">#fd0b1606</color>
+
+
+    <color name="album_bg">#3b877044</color>
+
+    <color name="bu_bg_n">#4f9c72</color>
+    <color name="bu_bg_p">#2c563f</color>
+
+
+</resources>
